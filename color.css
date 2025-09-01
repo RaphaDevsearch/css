@@ -1,0 +1,50 @@
+:root {
+  /* 🎨 Primary Palette */
+  --color-1: #ff6b6b; /* Red */
+  --color-2: #ff922b; /* Orange */
+  --color-3: #fadb14; /* Yellow */
+  --color-4: #40c057; /* Green */
+  --color-5: #15aabf; /* Teal */
+  --color-6: #228be6; /* Blue */
+  --color-7: #5f3dc4; /* Indigo */
+  --color-8: #be4bdb; /* Purple */
+  --color-9: #868e96; /* Gray */
+}
+
+/* 9 variations */
+.card.red     { background-color: var(--color-1); }
+.card.orange  { background-color: var(--color-2); }
+.card.yellow  { background-color: var(--color-3); color: black; }
+.card.green   { background-color: var(--color-4); }
+.card.teal    { background-color: var(--color-5); }
+.card.blue    { background-color: var(--color-6); }
+.card.indigo  { background-color: var(--color-7); }
+.card.purple  { background-color: var(--color-8); }
+.card.gray    { background-color: var(--color-9); }
+
+.color .card{
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+.grid-3{
+    /* display: grid; → enables grid layout. */
+    display: grid;
+
+    /* 
+    grid-template-columns: repeat(3, 1fr); → makes 3 equal-width columns.
+    1fr means "one fraction of available space".
+    */
+    grid-template-columns: repeat(3, 0fr);
+    
+    /* gap: 20px; → sets spacing between grid items (both row + column gaps). */
+    gap: 20px;
+    
+    /* column-gap: 10px; */
+}
