@@ -43,6 +43,120 @@
             <div class="card purple"></div>
         </div>
     </section>
+    <section class="text-align">
+        <p>Text Align</p>
+        <div class="auto">
+            <h1 class="title">Auto</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique mollitia
+                fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat, corporis
+                nemo quisquam vero.
+                Illum corporis modi tempora ex libero, obcaecati, consectetur fuga itaque recusandae eum rem illo
+                nostrum quasi excepturi expedita, eligendi doloribus voluptate eaque reprehenderit asperiores. Velit
+                magni illum asperiores aspernatur nihil!
+            </p>
+        </div>
+        <div class="left">
+            <h1 class="title">Left</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique mollitia
+                fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat, corporis
+                nemo quisquam vero.
+                Illum corporis modi tempora ex libero, obcaecati, consectetur fuga itaque recusandae eum rem illo
+                nostrum quasi excepturi expedita, eligendi doloribus voluptate eaque reprehenderit asperiores. Velit
+                magni illum asperiores aspernatur nihil!
+            </p>
+        </div>
+        <div class="right">
+            <h1 class="title">Right</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique mollitia
+                fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat, corporis
+                nemo quisquam vero.
+                Illum corporis modi tempora ex libero, obcaecati, consectetur fuga itaque recusandae eum rem illo
+                nostrum quasi excepturi expedita, eligendi doloribus voluptate eaque reprehenderit asperiores. Velit
+                magni illum asperiores aspernatur nihil!
+            </p>
+        </div>
+        <div class="justify">
+            <h1 class="title">Justify</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique mollitia
+                fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat, corporis
+                nemo quisquam vero.
+                Illum corporis modi tempora ex libero, obcaecati, consectetur fuga itaque recus
+            </p>
+        </div>
+        <div class="start">
+            <h1 class="title">Start</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique mollitia
+                fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat, corporis
+                nemo quisquam vero.
+                Illum corporis modi tempora ex libero, obcaecati, consectetur fuga itaque recusandae eum rem illo
+                nostrum quasi excepturi expedita, eligendi doloribus voluptate eaque reprehenderit asperiores. Velit
+                magni illum asperiores aspernatur nihil!
+            </p>
+        </div>
+        <div class="end">
+            <h1 class="title">End</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique mollitia
+                fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat, corporis
+                nemo quisquam vero.
+                Illum corporis modi tempora ex libero, obcaecati, consectetur fuga itaque recusandae eum rem illo
+                nostrum quasi excepturi expedita, eligendi doloribus voluptate eaque reprehenderit asperiores. Velit
+                magni illum asperiores aspernatur nihil!
+            </p>
+        </div>
+    </section>
+    <section class="display">
+        <div class="cards">
+            <div class="card">
+                <h1>Remove</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique
+                    mollitia
+                    fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat,
+                    corporis nemo quisquam vero.
+                </p>
+                <button class="btn btn-success" id="remove">Click here</button>
+            </div>
+             <div class="card">
+                <h1>Hide</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique
+                    mollitia
+                    fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat,
+                    corporis nemo quisquam vero.
+                </p>
+                <button class="btn btn-primary" id="hide">Click here</button>
+            </div>
+             <div class="card">
+                <h1>Reset All</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae consequatur similique
+                    mollitia
+                    fuga tempore quasi laudantium blanditiis quas iste architecto debitis unde eos aliquid quaerat,
+                    corporis nemo quisquam vero.
+                </p>
+                <button class="btn" id="reset">Click here</button>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        const removeBtn = document.getElementById('remove');
+        const hideBtn = document.getElementById('hide');
+        const resetBtn = document.getElementById('reset');
+        const card = document.getElementsByClassName('.card');
+
+        removeBtn.addEventListener('click', () => {
+            removeBtn.parentElement.remove();
+        });
+
+        hideBtn.addEventListener('click', () => {
+            hideBtn.parentElement.style.display = 'none';
+        });
+        resetBtn.addEventListener('click', () => {
+            document.querySelectorAll('.cards .card')
+            .forEach(c => c.style.display = 'block');   
+        });
+    </script>
 </body>
 
 </html>
