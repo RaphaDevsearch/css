@@ -143,18 +143,19 @@
         const removeBtn = document.getElementById('remove');
         const hideBtn = document.getElementById('hide');
         const resetBtn = document.getElementById('reset');
-        const card = document.getElementsByClassName('.card');
+        const card = document.getElementsByClassName('card');
 
         removeBtn.addEventListener('click', () => {
-            removeBtn.parentElement.remove();
+
+            removeBtn.parentElement.style.display = 'none';
         });
 
         hideBtn.addEventListener('click', () => {
-            hideBtn.parentElement.style.display = 'none';
+            hideBtn.parentElement.style.visibility = 'hidden';
         });
         resetBtn.addEventListener('click', () => {
-            document.querySelectorAll('.cards .card')
-            .forEach(c => c.style.display = 'block');   
+            removeBtn.parentElement.style.display = 'block';
+            hideBtn.parentElement.style.visibility = 'visible';
         });
     </script>
 </body>
